@@ -1,4 +1,3 @@
-The nature and Wildlife website
 This website is completely open source and you can tinker with it any way you want.
 IMPORTANT!
 The HTML file also contains CSS and JS,so don't add issues regarding that there is no CSS and JS files.
