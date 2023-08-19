@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Nature and Wildlife Emporium</title>
+  <style>
+    /* Reset default margin and padding */
+    body, h1, h2, h3, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    /* Contents bar */
+    .contents-bar {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .contents-bar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    /* Section styles */
+    .section {
+      padding: 20px;
+      background-color: #e0ebe4; /* Forest green background color */
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden; /* Hide overflowing content */
+      position: relative; /* For hover effect */
+      transition: box-shadow 0.3s; /* Add transition for box-shadow */
+    }
+
+    .section:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add hover effect to sections */
+    }
+
+    .section h2 {
+      color: #4CAF50;
+    }
+
+    /* Image styles */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s; /* Add transition for hover effect */
+    }
+
+    img:hover {
+      transform: scale(1.05); /* Add hover effect to images */
+    }
+
+    /* Lightbox styles */
+    .lightbox-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 1000;
+    }
+
+    .lightbox {
+      max-width: 90%;
+      max-height: 90%;
+      display: block;
+      cursor: pointer;
+    }
+
+    /* Center text within lightbox */
+    .lightbox img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Animation for contents bar */
+    .contents-bar {
+      animation: fadeInDown 1s both;
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>The Nature and Wildlife Emporium</h1>
+  <div class="contents-bar">
+    <a href="#cats">Cats</a>
+    <a href="#dogs">Dogs</a>
+    <a href="#bears">Bears</a>
+    <a href="#tigers">Tigers</a>
+    <a href="#lions">Lions</a>
+    <a href="#wolves">Wolves</a>
+    <a href="#leopards">Leopards</a>
+    <a href="#penguins">Penguins</a>
+    <a href="#hummingbirds">Hummingbirds</a>
+    <a href="#kingfishers">Kingfishers</a>
+  </div>
+
+  <div id="cats" class="section">
+    <h2>Cats (Felidae)</h2>
+    <p>The Felidae family includes a diverse group of carnivorous mammals known for their agility and retractable claws. Species such as the domestic cat (Felis catus), lion (Panthera leo), and tiger (Panthera tigris) showcase remarkable adaptations and behaviors that contribute to their success as predators.</p>
+    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_960_720.jpg" alt="Cat">
+  </div>
+
+  <div id="dogs" class="section">
+    <h2>Dogs (Canidae)</h2>
+    <p>The Canidae family comprises social and intelligent mammals with a long history of coexisting with humans. From the domestic dog (Canis lupus familiaris) to wild relatives like the gray wolf (Canis lupus), these animals have diverse roles in ecosystems and human societies.</p>
+    <img src="https://cdn.pixabay.com/photo/2016/02/19/15/46/dog-1210559_960_720.jpg" alt="Dog">
+  </div>
+
+  <div id="bears" class="section">
+    <h2>Bears (Ursidae)</h2>
+    <p>The Ursidae family includes a range of large mammals, such as the brown bear (Ursus arctos) and polar bear (Ursus maritimus), with distinct adaptations for various habitats. These charismatic creatures play vital roles in maintaining ecosystem health and are often symbolic of wilderness.</p>
+    <img src="https://magazineup.com/wp-content/uploads/2020/05/pexels-brett-sayles-2555825-768x511.jpg" alt="Bear">
+  </div>
+
+  <div id="tigers" class="section">
+    <h2>Tigers (Panthera tigris)</h2>
+    <p>Tigers, belonging to the Panthera genus, are iconic large cats known for their striking orange coat and dark stripes. As apex predators, they play a critical role in regulating prey populations. Unfortunately, several tiger subspecies are threatened due to habitat loss and poaching.</p>
+    <img src="https://eia-international.org/wp-content/uploads/Tiger-India1.jpg" alt="Tiger">
+  </div>
+
+  <div id="lions" class="section">
+    <h2>Lions (Panthera leo)</h2>
+    <p>Lions are majestic big cats that form social groups called prides. As keystone predators, they have a significant impact on ecosystems by controlling herbivore populations. Unfortunately, habitat loss and conflicts with humans are leading to declines in lion populations.</p>
+    <img src="https://cdn.pixabay.com/photo/2018/07/31/22/08/lion-3576045_960_720.jpg" alt="Lion">
+  </div>
+
+  <div id="wolves" class="section">
+    <h2>Wolves (Canis lupus)</h2>
+    <p>Wolves are social carnivores that play essential roles in maintaining ecosystem balance. With complex communication and pack structures, species like the gray wolf (Canis lupus) contribute to regulating prey populations and promoting biodiversity.</p>
+    <img src="https://images8.alphacoders.com/405/405997.jpg" alt="Wolf">
+  </div>
+
+  <div id="leopards" class="section">
+    <h2>Leopards (Panthera pardus)</h2>
+    <p>Leopards are powerful big cats found in a range of habitats. Their adaptable behavior and striking rosette patterns enable them to thrive in various environments. As stealthy hunters, leopards contribute to ecosystem stability.</p>
+    <img src="https://cdn.britannica.com/36/146436-050-6E4ACAA5/Leopard-Samburu-National-Reserve-Kenya.jpg" alt="Leopard">
+  </div>
+
+  <div id="penguins" class="section">
+    <h2>Penguins (Spheniscidae)</h2>
+    <p>Penguins are aquatic birds known for their distinctive appearance and remarkable adaptations for life in icy waters. Species like the Emperor penguin (Aptenodytes forsteri) possess unique behaviors for survival, including communal nesting and long-distance swimming.</p>
+    <img src="http://eco18.com/wp-content/uploads/2016/04/baby_emperor_penguin_by_laogephoto-d6094yj.jpg" alt="Penguin">
+  </div>
+
+  <div id="hummingbirds" class="section">
+    <h2>Hummingbirds (Trochilidae)</h2>
+    <p>Hummingbirds are tiny birds recognized for their rapid wing movements and vibrant plumage. With specialized adaptations for hovering and feeding on nectar, these avian wonders are found primarily in the Americas and play vital roles in pollination.</p>
+    <img src="https://media.spokesman.com/photos/2013/02/18/cop_hummingbirds18.jpg" alt="Hummingbird">
+  </div>
+
+  <div id="kingfishers" class="section">
+    <h2>Kingfishers (Alcedinidae)</h2>
+    <p>Kingfishers are colorful birds recognized for their distinctive hunting behavior. With a keen eye for spotting aquatic prey, these birds exhibit impressive aerial dives to catch fish and other aquatic creatures. Their presence adds vibrancy to aquatic ecosystems.</p>
+    <img src="https://images7.alphacoders.com/416/416332.jpg" alt="Kingfisher">
+  </div>
+  <script>
+    const images = document.querySelectorAll('.section img');
+    images.forEach(image => {
+      image.addEventListener('click', function(event) {
+        const lightboxContainer = document.createElement('div');
+        lightboxContainer.className = 'lightbox-container';
+
+        const lightbox = document.createElement('img');
+        lightbox.className = 'lightbox';
+        lightbox.src = this.src;
+        lightbox.alt = this.alt;
+
+        lightboxContainer.appendChild(lightbox);
+        document.body.appendChild(lightboxContainer);
+
+        lightboxContainer.addEventListener('click', function() {
+          document.body.removeChild(lightboxContainer);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
